@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: "Readex Pro", sans-serif;
+}
+
+.container {
+	@apply px-5 py-8 lg:p-0 max-w-6xl 2xl:max-w-7xl mx-auto;
+}
+
+.page-body {
+	min-height: 100vh;
+	@apply text-gray-900;
+}
+
+/* .section {
+	@apply ;
+} */
+
+.heading {
+	@apply font-bold text-5xl mb-3;
+}
+
+.support-text {
+	@apply text-lg;
+}
+
+.arrow-btn:hover:after {
+	padding-left: 10px;
+}
+
+.arrow-btn:after {
+	content: "\2192";
+	font-size: 30px;
+	padding-left: 6px;
+	position: relative;
+	/* top: -1px; */
+	vertical-align: sub;
+}
+
+/* #Mega Menu Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.mega-menu {
+	@apply mt-16;
+	display: none;
+	left: 0;
+	position: absolute;
+	text-align: left;
+	width: 100%;
+}
+
+/* #hoverable Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hoverable {
+	position: static;
+}
+
+.hoverable > .wrapper > a:after {
+	content: "\25BC";
+	font-size: 10px;
+	padding-left: 6px;
+	position: relative;
+	top: -1px;
+}
+
+.hoverable:hover .mega-menu {
+	display: block;
+}
+
+/* #toggle Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.toggleable > .wrapper > label:after {
+	content: "\25BC";
+	font-size: 10px;
+	padding-left: 6px;
+	position: relative;
+	top: -1px;
+}
+`` .toggle-input {
+	display: none;
+}
+.toggle-input:not(checked) ~ .mega-menu {
+	display: none;
+}
+
+.toggle-input:checked ~ .mega-menu {
+	display: block;
+}
+
+.toggle-input:checked + label {
+	color: white;
+	background: #2c5282; /*@apply bg-blue-800 */
+}
+
+.toggle-input:checked ~ label:after {
+	content: "\25B2";
+	font-size: 10px;
+	padding-left: 6px;
+	position: relative;
+	top: -1px;
+}
+
+.main-menu ul.menu-items {
+}
+
+.main-menu ul.menu-items > li {
+	@apply py-8 table text-left;
+	height: 60px;
+}
+
+.main-menu ul.menu-items > li > .wrapper {
+	@apply table-cell break-words border-l border-dashed border-primary;
+	vertical-align: middle;
+}
+
+.main-menu ul.menu-items > li > .wrapper > a,
+.main-menu ul.menu-items > li > .wrapper > label {
+	line-height: 1.2;
+}
+
+.main-menu ul.menu-items > li:first-child > .wrapper {
+	@apply border-l-0;
+}
+
+.bg-section {
+	background-size: 80% auto;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
