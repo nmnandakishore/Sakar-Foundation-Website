@@ -29,6 +29,10 @@ body {
 	@apply text-lg;
 }
 
+.arrow-btn {
+	@apply text-base;
+}
+
 .arrow-btn:hover:after {
 	padding-left: 10px;
 }
