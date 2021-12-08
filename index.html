@@ -17,7 +17,7 @@
     </head>
 
     <body>
-        <div class="top-menu w-full bg-primary h-12">
+        <div class="top-menu w-full bg-primary min-h-12">
             <div class="container grid grid-cols-2 text-center">
                 <div class="news-ticker py-3 col-span-2 sm:col-span-1 text-white sm:text-left hidden sm:inline-block">
                     <span class="font-bold">Latest</span>
@@ -38,8 +38,8 @@
             <div class="main-menu">
                 <nav class="relative text-primary">
                     <div class="container mx-auto flex flex-col sm:flex-row sm:justify-between">
-                        <div class="relative block p-2">
-                            <img src="/img/sakar_logo.svg" class="h-16 w-auto my-3" alt="">
+                        <div class="relative block p-2  text-center sm:text-left">
+                            <img src="/img/sakar_logo.svg" class="h-16 w-auto my-3 mx-auto sm:mx-0" alt="">
                         </div>
                         <ul class="menu-items flex overflow-x-auto">
 
@@ -320,13 +320,13 @@
             <div class="section bg-section" style="background-image: url(/img/logo-gradient-inverse.svg);">
                 <div class="container">
                     <div class="grid grid-cols-3">
-                        <div class="col-span-3 sm:col-span-1 py-52">
+                        <div class="col-span-3 sm:col-span-1 py-10 sm:py-52">
                             <div class="heading text-primary">Sākār Spark</div>
                             <p class="support-text">Supporting initiatives led by youth through <br>
                                 our non-profit incubator</p>
                             <a href="" class="arrow-btn text-primary font-bold">Learn more</a>
                         </div>
-                        <div class="col-span-3 sm:col-span-2">
+                        <div class="col-span-3 sm:col-span-2 sm:py-5">
                             <img class="w-full h-auto" src="/img/hero.png" alt="">
                         </div>
                     </div>
@@ -337,7 +337,7 @@
                         <div class="col-span-2 sm:col-span-1 bg-cover bg-center"
                             style="background-image: url('/img/kids3.jpg');">
                         </div>
-                        <div class="col-span-2 sm:col-span-1 py-32 pl-12">
+                        <div class="col-span-2 sm:col-span-1 py-16 sm:py-32 pl-12">
                             <div class="container">
                                 <div class="heading text-white">Youth can LEAD, <br> Youth can CARE.</div>
                                 <p class="support-text text-white">
@@ -402,7 +402,7 @@
                     <div class="heading text-center text-primary">
                         Start your own fundraiser
                     </div>
-                    <div class="grid grid-cols-3 sm:gap-16 mt-16">
+                    <div class="grid grid-cols-3 sm:gap-16 mt-16 text-center sm:text-left">
                         <div class="col-span-3 sm:col-span-1 table sm:border-dashed sm:border-gray-600 sm:border-r">
                             <span class="text-6xl text-primary table-cell p-2">1</span>
                             <span class="table-cell align-middle text-xl">Register yourself <br> at Sākār</span>
@@ -427,22 +427,24 @@
         </div>
 
         <footer>
-            <div class="footer-top bg-gray-200 pt-8  text-primary">
+            <div class="footer-top bg-gray-200 sm:pt-8  text-primary text-center sm:text-left">
                 <div class="container">
-                    <div class="grid grid-cols-3 py-8">
-                        <div class="col-span-3 sm:col-auto">
+                    <div class="grid grid-cols-3 py-0 sm:py-8">
+                        <div
+                            class="col-span-3 py-5 sm:py-0 sm:col-auto border-b border-dashed border-primary sm:border-none">
                             <a class="block py-2 hover:underline" href="">About us</a>
                             <a class="block py-2 hover:underline" href="">How How Sākār helps</a>
                             <a class="block py-2 hover:underline" href="">Sākār News</a>
                             <a class="block py-2 hover:underline" href="">Contact Us</a>
                         </div>
-                        <div class="col-span-3 sm:col-auto">
+                        <div
+                            class="col-span-3 py-5 sm:py-0 sm:col-auto border-b border-dashed border-primary sm:border-none">
                             <a class="block py-2 hover:underline" href="">Whitepapers</a>
                             <a class="block py-2 hover:underline" href="">Leadership</a>
                             <a class="block py-2 hover:underline" href="">Privacy policy</a>
                             <a class="block py-2 hover:underline" href="">Terms and condition</a>
                         </div>
-                        <div class="col-span-3 sm:col-auto">
+                        <div class="col-span-3 sm:col-auto py-5 sm:py-0">
                             <div class="table text-center">
                                 <img src="/img/sakar_logo.svg"
                                     class="w-8/12 h-auto mb-3 mx-auto table-cell align-middle" alt="">
