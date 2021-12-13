@@ -13,3 +13,27 @@ var options = {
 };
 
 var typed = new Typed("#news-ticker", options);
+
+window.onscroll = function () {
+	toggleSticky();
+};
+
+var headerElem = document.getElementById("header");
+var sticky = headerElem.offsetTop + headerElem.offsetHeight;
+var stickyTop = headerElem.offsetTop;
+var pageContentElem;
+function toggleSticky() {
+	if (
+		window.pageYOffset >= sticky &&
+		!headerElem.classList.contains("sticky")
+	) {
+		headerElem.classList.add("sticky");
+		headerElem.classList.add("animate__fadeInDown");
+	} else if (
+		window.pageYOffset < stickyTop &&
+		headerElem.classList.contains("sticky")
+	) {
+		headerElem.classList.remove("animate__fadeInDown");
+		headerElem.classList.remove("sticky");
+	}
+}

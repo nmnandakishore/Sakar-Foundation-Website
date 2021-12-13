@@ -6,23 +6,55 @@ html,
 body {
 	overflow-x: hidden;
 	font-family: "Readex Pro", sans-serif;
+	font-size: 16px;
 }
 
 .container {
-	@apply p-3 sm:px-5 sm:py-8 lg:p-0 max-w-6xl 2xl:max-w-7xl mx-auto;
+	@apply p-4 sm:px-5 sm:py-8 lg:p-0 max-w-6xl 2xl:max-w-7xl mx-auto;
+}
+
+.header {
+	animation-duration: 0.2s;
+	position: relative;
+	z-index: 1;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	transition: opacity 1s ease-in-out;
+
+	/* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.header.sticky + .page-body {
+	padding-top: 102px;
 }
 
 .page-body {
 	min-height: 100vh;
-	@apply text-gray-900;
+	@apply text-gray-800 font-light;
 }
 
-/* .section {
-	@apply ;
-} */
+.section {
+	@apply py-16;
+}
+
+.section-0 {
+	@apply py-0;
+}
+
+.overflow-section {
+	@apply pt-8 pb-0;
+}
 
 .heading {
-	@apply font-bold text-3xl sm:text-5xl mb-3;
+	@apply font-medium text-3xl sm:text-4xl mb-3;
 }
 
 .support-text {
@@ -44,12 +76,14 @@ body {
 	position: relative;
 	/* top: -1px; */
 	vertical-align: sub;
+	z-index: 0;
 }
 
 /* #Mega Menu Styles
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .mega-menu {
-	@apply mt-16;
+	/* @apply border-b border-dashed border-gray-200; */
+	margin-top: 4.4rem;
 	display: none;
 	left: 0;
 	position: absolute;
@@ -135,6 +169,12 @@ body {
 	background-size: 100% auto;
 	background-position: center;
 	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.fixed-bg {
+	background-size: 80% auto;
+	background-position: center;
 	background-repeat: no-repeat;
 }
 
