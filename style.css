@@ -14,7 +14,6 @@ body {
 }
 
 .header {
-	@apply max-h-screen overflow-y-auto;
 	animation-duration: 0.2s;
 	position: relative;
 	z-index: 1;
@@ -42,6 +41,17 @@ body {
 	.header.sticky .container {
 		padding-top: 0;
 		padding-bottom: 0;
+	}
+
+	.mega-menu {
+		max-height: calc(100vh - 300px);
+		overflow-y: auto;
+		@apply border-b border-dashed border-gray-200;
+	}
+
+	.header.sticky .mega-menu {
+		min-height: 70vh;
+		max-height: calc(100vh - 250px);
 	}
 }
 
@@ -75,7 +85,7 @@ body {
 }
 
 .arrow-btn {
-	@apply text-base;
+	@apply text-base inline-block;
 }
 
 .arrow-btn:hover:after {
@@ -110,7 +120,8 @@ body {
 	position: static;
 }
 
-.hoverable > .wrapper > a:after {
+.hoverable > .wrapper > a:after,
+.hoverable > .wrapper > label:after {
 	content: "\25BC";
 	font-size: 10px;
 	padding-left: 6px;
@@ -195,4 +206,20 @@ body {
 	.bg-section {
 		background-size: 80% auto;
 	}
+}
+
+.animate__delay-250ms {
+	--animation-delay: 250ms;
+}
+
+.animate__delay-500ms {
+	--animation-delay: 500ms;
+}
+
+.animate__delay-750ms {
+	--animation-delay: 750ms;
+}
+
+.animate__delay-1500ms {
+	--animation-delay: 1500ms;
 }

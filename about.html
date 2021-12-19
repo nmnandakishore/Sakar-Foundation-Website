@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/css3-animate-it/1.0.3/css/animations.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;700&display=swap" rel="stylesheet">
@@ -36,19 +37,20 @@
     <div id="header" class="header animate__animated animate__faster bg-gray-200">
       <div class="main-menu">
         <nav class="relative text-primary">
-          <div class="container mx-auto flex flex-col sm:flex-row sm:justify-between">
+          <div class="container p-0 mx-auto flex flex-col sm:flex-row sm:justify-between">
             <div class="header-logo-wrapper relative block p-2  text-center sm:text-left">
-              <a href="/">
+              <a href="">
                 <img src="/img/sakar_logo.svg" class="header-logo h-16 w-auto sm:my-[10px] mx-auto"
                   alt="Sakar Foundation">
               </a>
             </div>
-            <ul class="menu-items flex overflow-x-auto">
+            <ul class="menu-items flex overflow-x-auto border-none">
 
               <!--Regular Link-->
-              <li class="hover:bg-primary hover:text-white">
+              <li class="hover:bg-primary hover:text-white border-none">
                 <div class="wrapper">
-                  <a href="about.html" class="relative block px-2 lg:px-4 text-sm lg:text-base">About <br>
+                  <a href="about.html" class="relative block px-2 lg:px-4 text-sm lg:text-base">About
+                    <br>
                     Us</a>
                 </div>
               </li>
@@ -63,13 +65,14 @@
 
               <li class="hoverable hover:bg-primary hover:text-white">
                 <div class="wrapper">
-                  <a href="#" class="relative block px-2 lg:px-4 text-sm lg:text-base  hover:text-white">Our
+                  <label class="relative block px-2 lg:px-4 text-sm lg:text-base hover:bg-primary hover:text-white">Our
                     <br>
-                    Programs</a>
+                    Programs</label>
                 </div>
                 <div role="toggle" class="p-6 pb-0 mega-menu mb-20 sm:mb-0 shadow-xl bg-primary">
-                  <div class="container w-full flex flex-wrap justify-between mx-2">
-                    <div class="w-full sm:w-1/2 lg:w-1/4 pt-8">
+                  <div class="container mx-auto w-full flex flex-wrap justify-between mx-2">
+                    <div class="w-full sm:w-1/2 lg:w-1/4 pt-8 animate__animated animate__faster animate__fadeInLeft"
+                      style="animation-delay: 250ms;">
                       <div>
                         <H2 class="font-light text-3xl">We care about</H2>
                       </div>
@@ -88,7 +91,9 @@
                       </div>
 
                     </div>
-                    <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3 bg-humans">
+                    <ul
+                      class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3 bg-humans animate__animated animate__faster animate__fadeIn"
+                      style="animation-delay: 0ms;">
                       <h3 class="font-bold text-xl text-white text-bold mb-2">For Humans</h3>
                       <li>
                         <a href="#" class="block p-3 hover:bg-blue-600 text-gray-100 hover:underline">Category
@@ -116,7 +121,9 @@
                           Sublink</a>
                       </li>
                     </ul>
-                    <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3 bg-animals">
+                    <ul
+                      class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3 bg-animals animate__animated animate__faster animate__fadeIn"
+                      style="animation-delay: 150ms;">
                       <h3 class="font-bold text-xl text-white text-bold mb-2">For Animals</h3>
                       <li>
                         <a href="#" class="block p-3 hover:bg-blue-600 text-gray-100 hover:underline">Category
@@ -144,7 +151,9 @@
                           Sublink</a>
                       </li>
                     </ul>
-                    <ul class="px-4 w-full sm:w-1/2 lg:w-1/4  pb-6 pt-6 lg:pt-3 bg-plants">
+                    <ul
+                      class="px-4 w-full sm:w-1/2 lg:w-1/4  pb-6 pt-6 lg:pt-3 bg-plants animate__animated animate__faster animate__fadeIn"
+                      style="animation-delay: 300ms;">
                       <h3 class="font-bold text-xl text-white text-bold">For Plants</h3>
                       <li>
                         <a href="#" class="block p-3 hover:bg-blue-600 text-gray-100 hover:underline">Category
@@ -185,12 +194,14 @@
                 </div>
                 <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-primary">
                   <div class="container mx-auto w-full flex flex-wrap justify-between mx-2">
-                    <div class="w-full text-white mb-8">
+                    <div class="w-full text-white mb-8  animate__animated animate__faster animate__fadeInDown"
+                      style="animation-delay: 150ms;">
                       <h2 class="font-bold text-2xl">Work with us for a change</h2>
                       <p>The change you always wanted.</p>
                     </div>
                     <ul
-                      class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-400 border-dashed border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
+                      class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-400 border-dashed border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3 animate__animated animate__faster animate__fadeIn"
+                      style="animation-delay: 0ms;">
                       <div class="flex items-center">
                         <img class="h-8 mb-3 mr-3 fill-current text-white" src="/img/get_involved/volunteer.svg" alt="">
                         <h3 class="font-bold text-xl text-white text-bold mb-2">Be a volunteer
@@ -207,7 +218,8 @@
                       </div>
                     </ul>
                     <ul
-                      class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-400 border-dashed border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
+                      class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-400 border-dashed border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3 animate__animated animate__faster animate__fadeIn"
+                      style="animation-delay: 100ms;">
                       <div class="flex items-center">
                         <img class="h-8 mb-3 mr-3 fill-current text-white" src="/img/get_involved/fundraiser.svg"
                           alt="">
@@ -221,13 +233,15 @@
                         We'll help you to raise money through our Sākār Spark program.
                       </p>
                       <div class="flex items-center py-3">
-                        <a href="#" class="text-white bold border-blue-300 hover:text-blue-300 arrow-btn">Find
+                        <a href="sakar-spark.html"
+                          class="text-white bold border-blue-300 hover:text-blue-300 arrow-btn">Find
                           out
                           more</a>
                       </div>
                     </ul>
                     <ul
-                      class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-400 border-dashed border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
+                      class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-400 border-dashed border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3 animate__animated animate__faster animate__fadeIn"
+                      style="animation-delay: 200ms;">
                       <div class="flex items-center">
                         <img class="h-8 mb-3 mr-3 fill-current text-white" src="/img/get_involved/partner.svg" alt="">
                         <h3 class="font-bold text-xl text-white text-bold mb-2">Partner with us
@@ -244,7 +258,9 @@
                           more</a>
                       </div>
                     </ul>
-                    <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-400 border-dashed pb-6 pt-6 lg:pt-3">
+                    <ul
+                      class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-400 border-dashed pb-6 pt-6 lg:pt-3 animate__animated animate__faster animate__fadeIn"
+                      style="animation-delay: 300ms;">
                       <div class="flex items-center">
                         <img class="h-8 mb-3 mr-3 fill-current text-white" src="/img/get_involved/donate.svg" alt="">
                         <h3 class="font-bold text-xl text-white text-bold mb-2">Donate</h3>
@@ -298,26 +314,26 @@
       <div class="page-header px-8 bg-primaryDark">
         <div class="container">
           <div class="grid grid-cols-2 sm:gap-10">
-            <div class="my-auto text-white col-span-2 sm:col-span-1">
-              <p class="heading">About Us</p>
-              <p class="mt-6 text-justify">
+            <div class="my-auto text-white col-span-2 sm:col-span-1 animatedParent" data-sequence="300">
+              <p class="heading animated animateOnce fadeInDownShort" data-id="1">About Us</p>
+              <p class="mt-6 text-justify animated animateOnce fadeInLeftShort" data-id="2">
                 At Sākār Foundation, we believe, we can solve problems only by solving the root cause. We encourage
                 children to actively involve
                 in activities for betterment of the society. We also make them learn Not only humans but even all living
                 beings including animals and plants are the part of <b>Nature's fabric</b> as we call it.
               </p>
             </div>
-            <div class="text-4xl my-auto text-white col-span-2 sm:col-span-1">
-              <img class="mt-16 -mb-24" src="/img/about.png" alt="">
+            <div class="text-4xl my-auto text-white col-span-2 sm:col-span-1 animatedParent" data--sequence="300">
+              <img class="mt-16 -mb-24 animated animateOnce fadeInRightShort" data-id="1" src="/img/about.png" alt="">
             </div>
           </div>
         </div>
       </div>
 
       <div class="section mt-16">
-        <div class="container">
-          <p class="heading text-primary">Who we are</p>
-          <p class="mt-6 text-justify">
+        <div class="container animatedParent" data--sequence="300">
+          <p class="heading text-primary animated animateOnce fadeInDownShort" data-id="1">Who we are</p>
+          <p class="mt-6 text-justify animated animateOnce fadeInUpShort" data-id="1">
             Maecenas rutrum tellus dui, at pulvinar augue blandit lacinia. Etiam in fringilla augue, non laoreet ex.
             Nunc
             velit augue, hendrerit venenatis orci eu, hendrerit dignissim lorem. Morbi ultrices et felis nec gravida.
@@ -336,12 +352,13 @@
       <div class="section overflow-section bg-gray-200 mt-8">
         <div class="container">
           <div class="grid grid-cols-2 sm:gap-10 mt-8">
-            <div class="col-span-2 sm:col-span-1">
-              <img class="-mb-20" src="/img/sudents-helping-people.jpg" alt="">
+            <div class="col-span-2 sm:col-span-1 animatedParent" data-sequence="300">
+              <img class="-mb-20 an animated animateOnce fadeInLeftShort" data-id="1"
+                src="/img/sudents-helping-people.jpg" alt="">
             </div>
-            <div class="col-span-2 sm:col-span-1">
-              <p class="heading text-primary mb-8">What we do</p>
-              <p class="text-justify">
+            <div class="col-span-2 sm:col-span-1 animatedParent" data-sequence="300">
+              <p class="heading text-primary mb-8 animated animateOnce fadeInRightShort" data-id="1">What we do</p>
+              <p class="text-justify animated animateOnce fadeInRightShort" data-id="2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta iaculis mi et convallis. Quisque
                 blandit viverra nulla, ut rutrum dolor auctor eu. Fusce maximus porta dolor, nec posuere tortor luctus
                 ac. Sed quis leo non nibh suscipit fringilla nec euismod diam. Quisque eget ante ligula. Sed ornare,
@@ -356,17 +373,18 @@
       <div class="section mt-32 p-8 mb-20">
         <div class="container">
           <div class="grid grid-cols-2 sm:gap-10">
-            <div class="col-span-2 sm:col-span-1">
-              <p class="heading text-primary mb-8">Our mission</p>
-              <p class="text-justify">
+            <div class="col-span-2 sm:col-span-1 animatedParent" data-sequence="300">
+              <p class="heading text-primary mb-8 animated animateOnce fadeInLeftShort" data-id="1">Our mission</p>
+              <p class="text-justify animated animateOnce fadeInLeftShort" data-id="2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta iaculis mi et convallis. Quisque
                 blandit viverra nulla, ut rutrum dolor auctor eu. Fusce maximus porta dolor, nec posuere tortor luctus
                 ac. Sed quis leo non nibh suscipit fringilla nec euismod diam. Quisque eget ante ligula. Sed ornare,
                 metus at sollicitudin gravida, quam lorem bibendum justo, in aliquam est arcu at dui.
               </p>
             </div>
-            <div class="col-span-2 sm:col-span-1">
-              <img class="-mb-20" src="/img/students-community-work.png" alt="">
+            <div class="col-span-2 sm:col-span-1 animatedParent" data-sequence="300">
+              <img class="-mb-20 animated animateOnce fadeInRightShort" data-id="1"
+                src="/img/students-community-work.png" alt="">
             </div>
           </div>
         </div>
@@ -418,6 +436,10 @@
 
 
     <script type="module" src="/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="module" src="/js/jquery.flexisel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/css3-animate-it/1.0.3/js/css3-animate-it.min.js"
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
   </body>

@@ -37,3 +37,38 @@ function toggleSticky() {
 		headerElem.classList.remove("sticky");
 	}
 }
+
+/*-------------------Scroll Animations------------------ */
+
+// var animateOnScrollElems = document.querySelectorAll(".animate_on_scroll");
+// var animateOnScrollElems = document.querySelectorAll("[data-animate]");
+
+// window.addEventListener("load", function () {
+// 	for (var j = 0; j < animateOnScrollElems.length; j++) {
+// 		var elem = animateOnScrollElems[j];
+// 		elem.classList.add("hidden");
+// 	}
+// });
+
+// function reveal() {
+// 	for (var i = 0; i < animateOnScrollElems.length; i++) {
+// 		var elem = animateOnScrollElems[i];
+// 		var windowHeight = window.innerHeight;
+// 		var elementTop = elem.getBoundingClientRect().top;
+// 		var elementVisible = 0.8 * Window.innerHeight;
+
+// 		if (
+// 			elementTop < windowHeight - elementVisible &&
+// 			elem.classList.contains("hidden")
+// 		) {
+// 			elem.classList.add("animate__animated");
+// 			elem.classList.add(elem.dataset.animate);
+// 			elem.classList.remove("hidden");
+// 		}
+// 		/*else {
+// 			elem.classList.remove("active");
+// 		}*/
+// 	}
+// }
+
+// window.addEventListener("scroll", reveal);
